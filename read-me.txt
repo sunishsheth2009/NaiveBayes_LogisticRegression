@@ -1,0 +1,18 @@
+Name : Sunish Sohil Sheth
+Net Id. : sss140830
+
+
+Unzip the folder and put all the .java files in the same folder. Include 4 more folders with these java files. These folders include train/ham train/spam test/ham test/spam.
+
+Compile:
+javac NbLr.java
+
+Run:
+java NbLr <training-set-ham> <training-set-spam> <test-set-ham> <test-set-spam> <eita> <lamda> <no-of-iterations>
+eita : double (learning rate)
+lamda : double (penalty)
+no-of-iteration : integer (hard bound on the no of iterations)
+
+java NbLr train/ham train/spam test/ham test/spam 0.1 1 50
+java NbLr train/ham train/spam test/ham test/spam 0.001 10 100
+java NbLr train/ham train/spam test/ham test/spam 0.001 10 200
